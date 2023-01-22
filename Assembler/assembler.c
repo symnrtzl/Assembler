@@ -2,12 +2,12 @@
 
 
 
-/* KOMUTLARIN DOSYADA YAZIM ÞEKLÝ ÞU ÞEKÝLDE OLMALI
-		HRK X1,X2 --> bu komutun anlamý X1=X2
-		TOP X1,X2 --> bu komutun anlamý X1=X1+X2
-		CRP X1,X2 --> bu komutun anlamý X1=X1*X2
-		CIK X1,X2 --> bu komutun anlamý X1=X1-X2
-		BOL X1,X2 --> bu komutun anlamý: tam kýsmý X1=X1/X2 ve DX=X1 mod X2
+/* KOMUTLARIN DOSYADA YAZIM SEKLI SU SEKILDE OLMALI
+		HRK X1,X2 --> bu komutun anlami X1=X2
+		TOP X1,X2 --> bu komutun anlami X1=X1+X2
+		CRP X1,X2 --> bu komutun anlami X1=X1*X2
+		CIK X1,X2 --> bu komutun anlami X1=X1-X2
+		BOL X1,X2 --> bu komutun anlami: tam kismi X1=X1/X2 ve DX=X1 mod X2
 		VE X1,X2 
 		VEYA X1,X2 
 		DEG X1
@@ -19,7 +19,7 @@
 */
 
 
-//VE, VEYA ve DEÐÝL komutlarýnýn binary durumlarýný görüntülemek için Binary(int sayi) fonksiyonu 
+//VE, VEYA ve DEGIL komutlarinin binary durumlarini görüntülemek için Binary(int sayi) fonksiyonu 
 int Binary(int sayi){
 	int digit,toplam=0,i=1,yedek;
 	yedek=sayi;
