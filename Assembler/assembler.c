@@ -1,13 +1,13 @@
 #include<stdio.h>
-// ŞEYMANUR TOZAL (02195076024)  2. SINIF 2. ÖĞRETİM
 
 
-/* KOMUTLARIN DOSYADA YAZIM ŞEKLİ ŞU ŞEKİLDE OLMALI
-		HRK X1,X2 --> bu komutun anlamı X1=X2
-		TOP X1,X2 --> bu komutun anlamı X1=X1+X2
-		CRP X1,X2 --> bu komutun anlamı X1=X1*X2
-		CIK X1,X2 --> bu komutun anlamı X1=X1-X2
-		BOL X1,X2 --> bu komutun anlamı: tam kısmı X1=X1/X2 ve DX=X1 mod X2
+
+/* KOMUTLARIN DOSYADA YAZIM ÃEKLÃ ÃU ÃEKÃLDE OLMALI
+		HRK X1,X2 --> bu komutun anlamÃ½ X1=X2
+		TOP X1,X2 --> bu komutun anlamÃ½ X1=X1+X2
+		CRP X1,X2 --> bu komutun anlamÃ½ X1=X1*X2
+		CIK X1,X2 --> bu komutun anlamÃ½ X1=X1-X2
+		BOL X1,X2 --> bu komutun anlamÃ½: tam kÃ½smÃ½ X1=X1/X2 ve DX=X1 mod X2
 		VE X1,X2 
 		VEYA X1,X2 
 		DEG X1
@@ -19,7 +19,7 @@
 */
 
 
-//VE, VEYA ve DEĞİL komutlarının binary durumlarını görüntülemek için Binary(int sayi) fonksiyonu 
+//VE, VEYA ve DEÃÃL komutlarÃ½nÃ½n binary durumlarÃ½nÃ½ gÃ¶rÃ¼ntÃ¼lemek iÃ§in Binary(int sayi) fonksiyonu 
 int Binary(int sayi){
 	int digit,toplam=0,i=1,yedek;
 	yedek=sayi;
@@ -49,7 +49,7 @@ int main(void){
 	dosya=fopen(dosyaadi,"r");
 	
 	if(dosya== NULL){
-		printf("Dosya Bulunamadı...");
+		printf("Dosya BulunamadÃ½...");
 	}
 	
 	printf("\nDOSYADA YAZILAN KOD\n\n");
@@ -65,12 +65,12 @@ int main(void){
 	}
 	//printf("%s",b);	
 	
-	char ax[]="AX"; //char olarak tanımlanan değişken çıktının anlaşılır olması için belirtildi.
+	char ax[]="AX"; //char olarak tanÃ½mlanan deÃ°iÃ¾ken Ã§Ã½ktÃ½nÃ½n anlaÃ¾Ã½lÃ½r olmasÃ½ iÃ§in belirtildi.
 	char bx[]="BX";
 	char cx[]="CX";
 	char dx[]="DX";
 	int sayi;
-	// int iax,ibx,icx ve idx işleme tabi tutulan kayıtçılardır(registerlerdir).Burada değerleri belirtildi.
+	// int iax,ibx,icx ve idx iÃ¾leme tabi tutulan kayÃ½tÃ§Ã½lardÃ½r(registerlerdir).Burada deÃ°erleri belirtildi.
 	int iax=70; 
 	int ibx=80;
 	int icx=90;
@@ -79,7 +79,7 @@ int main(void){
 	int kalan=0;
 	int k;
 	
-	//Kayıtçıların(registerlerin) değeri ekrana yazıldı.
+	//KayÃ½tÃ§Ã½larÃ½n(registerlerin) deÃ°eri ekrana yazÃ½ldÃ½.
 	printf("AX,BX,CX,DX KAYITCILARININ DEGERLERI \n");
 	printf("AX=%d \nBX=%d \nCX=%d \nDX=%d \n\n\n\n",iax,ibx,icx,idx);
 	
@@ -499,7 +499,7 @@ int main(void){
 			}
 		}
 	}
-	//ÇARPMA KOMUTU
+	//Ã‡ARPMA KOMUTU
 	else if(b[0]=='C' && b[1]=='R'){
 		if(b[4]=='A'){
 			if(b[7]=='A'){
@@ -746,7 +746,7 @@ int main(void){
 			}
 		}
 	}
-	//ÇIKARMA KOMUTU
+	//Ã‡IKARMA KOMUTU
 	else if(b[0]=='C' && b[1]=='I'){
 		if(b[4]=='A'){
 			if(b[7]=='A'){
@@ -993,7 +993,7 @@ int main(void){
 			}
 		}
 	}
-	//BÖLME KOMUTU
+	//BÃ–LME KOMUTU
 	else if(b[0]=='B' ){
 		if(b[4]=='A'){
 			if(b[7]=='A'){
@@ -1320,7 +1320,7 @@ int main(void){
 			}
 		}
 	}
-	//VE(AND) MANTIKSAL OPERATÖRÜ
+	//VE(AND) MANTIKSAL OPERATÃ–RÃœ
 	else if(b[0]=='V' && b[2]==' '){
 		if(b[3]=='A'){
 			if(b[6]=='A'){
@@ -1728,7 +1728,7 @@ int main(void){
 			}
 		}
 	}
-	//VEYA(OR) MANTIKSAL OPERATÖRÜ
+	//VEYA(OR) MANTIKSAL OPERATÃ–RÃœ
 	else if(b[0]=='V' && b[1]=='E' && b[2]=='Y' && b[3]=='A'){
 		if(b[5]=='A'){
 			if(b[8]=='A'){
@@ -2136,7 +2136,7 @@ int main(void){
 			}
 		}
 	}
-	//DEĞİL(NOT) OPERATÖRÜ
+	//DEÃÃL(NOT) OPERATÃ–RÃœ
 	else if(b[0]=='D'){
 		if(b[4]=='A'){
 			unsigned char dax=iax;
@@ -2198,9 +2198,9 @@ int main(void){
 	
 	// SS ADRES , SSD ADRES , SN ADRES , SP ADRES KOMUTLARI
 	else if(b[0]='S'){
-		int oi; //Önceki işlem(oi)
+		int oi; //Ã–nceki iÃ¾lem(oi)
 		printf("Onceki islemin sonucunu giriniz...");
-		scanf("%d",&oi);//Önceki işlemin değeri kullanıcıdan alınır.Hangi komut ise ona göre hareket eder.
+		scanf("%d",&oi);//Ã–nceki iÃ¾lemin deÃ°eri kullanÃ½cÃ½dan alÃ½nÃ½r.Hangi komut ise ona gÃ¶re hareket eder.
 		
 		if(b[1]=='S' && b[2]==' '){
 			printf("%s\n",b);
