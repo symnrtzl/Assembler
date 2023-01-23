@@ -65,12 +65,12 @@ int main(void){
 	}
 	//printf("%s",b);	
 	
-	char ax[]="AX"; //char olarak tanýmlanan deðiþken çýktýnýn anlaþýlýr olmasý için belirtildi.
+	char ax[]="AX"; //char olarak tanimlanan degisken çýktýnýn anlaþýlýr olmasý için belirtildi.
 	char bx[]="BX";
 	char cx[]="CX";
 	char dx[]="DX";
 	int sayi;
-	// int iax,ibx,icx ve idx iþleme tabi tutulan kayýtçýlardýr(registerlerdir).Burada deðerleri belirtildi.
+	// int iax,ibx,icx ve idx isleme tabi tutulan kayitcilardir(registerlerdir).Burada degerleri belirtildi.
 	int iax=70; 
 	int ibx=80;
 	int icx=90;
@@ -79,7 +79,7 @@ int main(void){
 	int kalan=0;
 	int k;
 	
-	//Kayýtçýlarýn(registerlerin) deðeri ekrana yazýldý.
+	//Kayitcilarin(registerlerin) degeri ekrana yazildi.
 	printf("AX,BX,CX,DX KAYITCILARININ DEGERLERI \n");
 	printf("AX=%d \nBX=%d \nCX=%d \nDX=%d \n\n\n\n",iax,ibx,icx,idx);
 	
@@ -2200,7 +2200,7 @@ int main(void){
 	else if(b[0]='S'){
 		int oi; //Önceki iþlem(oi)
 		printf("Onceki islemin sonucunu giriniz...");
-		scanf("%d",&oi);//Önceki iþlemin deðeri kullanýcýdan alýnýr.Hangi komut ise ona göre hareket eder.
+		scanf("%d",&oi);//Önceki islemin degeri kullanicidan alinir.Hangi komut ise ona göre hareket eder.
 		
 		if(b[1]=='S' && b[2]==' '){
 			printf("%s\n",b);
